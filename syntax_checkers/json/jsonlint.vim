@@ -36,6 +36,9 @@ endfunction
 call g:SyntasticRegistry.CreateAndRegisterChecker({
     \ 'filetype': 'json',
     \ 'name': 'jsonlint'})
+call g:SyntasticRegistry.CreateAndRegisterChecker({
+    \ 'filetype': 'geojson',
+    \ 'name': 'jsonlint'})
 
 let &cpo = s:save_cpo
 unlet s:save_cpo
